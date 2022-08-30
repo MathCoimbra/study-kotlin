@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnOpenWebsite = findViewById<Button>(R.id.btn_open_website)
-        val btnOpenNextActivity = findViewById<Button>(R.id.btn_open_nxt_atv)
+        val btnOpenOtherActivity = findViewById<Button>(R.id.btn_open_nxt_atv)
+        val btnOpenLoginActivity = findViewById<Button>(R.id.btn_open_login_atv)
 
         /* chamada implícita de uma Activity */
         btnOpenWebsite.setOnClickListener{
@@ -41,11 +42,15 @@ class MainActivity : AppCompatActivity() {
         /* chamada explícita de uma Activity */
         /* packageContext - informado qual é activity que irá passar para outra activity, no caso abaixo é essa activity, portanto, this */
         /* NextActivity::class.java - passa a classe instanciada para Intent */
-        btnOpenNextActivity.setOnClickListener{
+        btnOpenOtherActivity.setOnClickListener{
             val i = Intent(this, OtherActivity::class.java)
             startActivity(i)
         }
 
+        btnOpenLoginActivity.setOnClickListener{
+            val i = Intent(this, LoginActivity::class.java)
+            startActivity(i)
+        }
 
     }
 
