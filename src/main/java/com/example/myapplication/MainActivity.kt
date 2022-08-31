@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val btnOpenWebsite = findViewById<Button>(R.id.btn_open_website)
         val btnOpenOtherActivity = findViewById<Button>(R.id.btn_open_nxt_atv)
         val btnOpenLoginActivity = findViewById<Button>(R.id.btn_open_login_atv)
+        val btnOpenTableActivity = findViewById<Button>(R.id.btn_open_table_atv)
 
         /* chamada implícita de uma Activity */
         btnOpenWebsite.setOnClickListener{
@@ -49,6 +50,11 @@ class MainActivity : AppCompatActivity() {
 
         btnOpenLoginActivity.setOnClickListener{
             val i = Intent(this, LoginActivity::class.java)
+            startActivity(i)
+        }
+
+        btnOpenTableActivity.setOnClickListener{
+            val i = Intent(this, TableActivity::class.java)
             startActivity(i)
         }
 
