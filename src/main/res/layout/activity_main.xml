@@ -78,4 +78,14 @@
             android:layout_marginEnd="16dp"
             />
 
+    <Button
+            android:id="@+id/btn_open_login_relative_atv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Relative"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+
 </LinearLayout>
